@@ -1,0 +1,173 @@
+/* Глобальный сброс */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* html и body на всю высоту/ширину */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #121212; /* тёмный фон */
+    color: rgba(255, 255, 255, 0.87);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* #root на весь экран */
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== Ссылки ========== */
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+a:hover {
+    color: #535bf2;
+    transform: scale(1.05);
+}
+
+/* ========== Заголовки ========== */
+h1, h2, h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+/* ========== Кнопки ========== */
+button {
+    border-radius: 12px;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover {
+    background-color: #6200ee;
+    transform: scale(1.05);
+}
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ========== Формы и инпуты ========== */
+input, textarea, select {
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 0.5em 0.75em;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #646cff;
+    background-color: #2a2a2a;
+}
+
+/* ========== Таблицы ========== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 16px;
+}
+th, td {
+    border: 1px solid #444;
+    padding: 8px 12px;
+    text-align: left;
+}
+th {
+    background-color: #1e1e1e;
+}
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* ========== Контейнеры / карточки ========== */
+.card {
+    border-radius: 16px;
+    background: linear-gradient(145deg, #1e1e2a, #121121);
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* ========== Адаптивные настройки ========== */
+@media (max-width: 768px) {
+    #root {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+/* ========== Система цветовой схемы ========== */
+@media (prefers-color-scheme: light) {
+    html, body {
+        background-color: #f9f9f9;
+        color: #213547;
+    }
+    button {
+        background-color: #ffffff;
+        color: #213547;
+    }
+    input, textarea, select {
+        background-color: #fff;
+        color: #213547;
+        border: 1px solid #ccc;
+    }
+    table th {
+        background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+}
+
+
